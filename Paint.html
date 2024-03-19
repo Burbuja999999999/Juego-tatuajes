@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de paint</title>
+  <link rel="stylesheet" href="paint.css">
+</head>
+<body>
+  <div id="canvasContainer">
+    <canvas id="canvas"></canvas>
+    <div id="cursorPreview"></div>
+  </div>
+  <div id="controls">
+    <input type="color" id="colorPicker">
+    <button onclick="changeBackgroundColor()">Cambiar Fondo</button>
+    <button onclick="clearCanvas()">Limpiar</button>
+    <button onclick="changePenSize('small')">Pequeño</button>
+    <button onclick="changePenSize('medium')">Mediano</button>
+    <button onclick="changePenSize('large')">Grande</button>
+    <button onclick="changePenSize('extra-large')">Extra Grande</button>
+    <button onclick="changePenSize('giant')">Gigante</button>
+    <button onclick="saveCanvas()">Guardar</button>
+  </div>
+
+ <footer>@Pere</footer>
+
+  <script src="paint.js"></script>
+</body>
+</html>
